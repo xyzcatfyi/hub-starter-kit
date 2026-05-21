@@ -1,0 +1,9 @@
+/* App.css — Hub Starter Kit shell */
+/* Vite boilerplate removed. */
+/* Module-level styles live in index.css or per-module CSS files. */
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
