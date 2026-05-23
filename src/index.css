@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=DM+Mono:wght@400;500&display=swap');
-
 *,
 *::before,
 *::after {
@@ -9,44 +7,34 @@
 }
 
 /* ============================================
-   FLEXOKI TOKENS — via data-theme attribute
-   Flexoki by Steph Ango — stephango.com/flexoki
+   BASE TOKENS — via data-theme attribute
+   Monochrome — no personality, pure structure
    ============================================ */
 
 [data-theme="dark"] {
-  --bg: #100F0F;
-  --bg2: #1C1B1A;
-  --ui: #282726;
-  --ui2: #343331;
-  --ui3: #403E3C;
-  --tx3: #575653;
-  --tx2: #878580;
-  --tx: #CECDC3;
-  --accent: #8B7EC8;
-  --accent-text: #FFFCF0;
-  --re: #D14D41;
-  --or: #DA702C;
-  --ye: #D0A215;
-  --gr: #879A39;
-  --cy: #3AA99F;
+  --bg:  #000000;
+  --bg2: #111111;
+  --ui:  #222222;
+  --ui2: #333333;
+  --ui3: #444444;
+  --tx3: #555555;
+  --tx2: #888888;
+  --tx:  #FFFFFF;
+  --accent: #FFFFFF;
+  --accent-text: #000000;
 }
 
 [data-theme="light"] {
-  --bg: #FFFCF0;
-  --bg2: #F2F0E5;
-  --ui: #E6E4D9;
-  --ui2: #DAD8CE;
-  --ui3: #CECDC3;
-  --tx3: #B7B5AC;
-  --tx2: #6F6E69;
-  --tx: #100F0F;
-  --accent: #5E409D;
-  --accent-text: #FFFCF0;
-  --re: #AF3029;
-  --or: #BC5215;
-  --ye: #AD8301;
-  --gr: #66800B;
-  --cy: #24837B;
+  --bg:  #FFFFFF;
+  --bg2: #F5F5F5;
+  --ui:  #E0E0E0;
+  --ui2: #CCCCCC;
+  --ui3: #BBBBBB;
+  --tx3: #999999;
+  --tx2: #666666;
+  --tx:  #000000;
+  --accent: #000000;
+  --accent-text: #FFFFFF;
 }
 
 /* ============================================
@@ -54,7 +42,7 @@
    ============================================ */
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: system-ui, sans-serif;
   min-height: 100vh;
 }
 
@@ -78,7 +66,6 @@ body {
 }
 
 .login h1 {
-  font-family: 'Outfit', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -96,7 +83,6 @@ body {
   border: 1px solid var(--ui2);
   color: var(--tx);
   border-radius: 4px;
-  font-family: 'Outfit', sans-serif;
 }
 
 .login input:focus {
@@ -111,7 +97,6 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'Outfit', sans-serif;
   font-weight: 600;
 }
 
@@ -126,7 +111,6 @@ body {
   padding: 1rem 2rem;
   background: var(--bg2);
   border-bottom: 1px solid var(--ui);
-  font-family: 'Outfit', sans-serif;
 }
 
 .hub-nav__title {
@@ -163,7 +147,6 @@ body {
   color: var(--tx2);
   border-radius: 4px;
   cursor: pointer;
-  font-family: 'Outfit', sans-serif;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
 
@@ -188,5 +171,5 @@ body {
    ============================================ */
 
 .mono {
-  font-family: 'DM Mono', monospace;
+  font-family: ui-monospace, monospace;
 }
