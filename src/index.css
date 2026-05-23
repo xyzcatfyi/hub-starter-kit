@@ -173,3 +173,69 @@ body {
 .mono {
   font-family: ui-monospace, monospace;
 }
+
+/* ============================================
+   HOME
+   ============================================ */
+
+.home {
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.home__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--accent);
+}
+
+.home__tagline {
+  color: var(--tx2);
+  font-size: 1rem;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.home__card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--bg2);
+  border: 1px solid var(--ui);
+  border-radius: 6px;
+  text-decoration: none;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.home__card:hover {
+  border-color: var(--accent);
+  background: var(--ui);
+}
+
+.home__card-title {
+  font-weight: 600;
+  color: var(--tx);
+  font-size: 0.95rem;
+}
+
+.home__card-desc {
+  color: var(--tx2);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}

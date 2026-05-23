@@ -13,6 +13,7 @@
 import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login.jsx";
+import Home from "./pages/Home.jsx";
 import ModuleOne from "./pages/ModuleOne.jsx";
 import ModuleTwo from "./pages/ModuleTwo.jsx";
 import Nav from "./components/Nav.jsx";
@@ -56,8 +57,8 @@ function App() {
       <Nav onLogout={handleLogout} theme={theme} onToggle={toggleTheme} />
       <main>
         <Routes>
-          {/* Default route — redirects to first module */}
-          <Route path="/" element={<Navigate to="/module-one" replace />} />
+          {/* Default route — Hub landing page */}
+          <Route path="/" element={<Home theme={theme} />} />
           <Route path="/module-one" element={<ModuleOne theme={theme} />} />
           <Route path="/module-two" element={<ModuleTwo theme={theme} />} />
         </Routes>
