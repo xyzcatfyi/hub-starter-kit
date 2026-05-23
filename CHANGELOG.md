@@ -17,3 +17,11 @@
 - Deployed to Cloudflare Pages
 
 ---
+
+## 0.2.0 — 23-05-2026
+### Changed
+- Applied base monochrome theme — replaces Flexoki
+- Removed Google Fonts — system-ui and ui-monospace only
+- Updated xyzcat-ui package to 0.4.0
+### Removed
+- Vite boilerplate SVGs (react.svg, vite.svg)
